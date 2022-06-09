@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
@@ -15,7 +15,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 15vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+.button{
+  height:40px;
+  width:80px;
+  font-size:large;
+  font-weight: bold;
+  border:10px black;
+  color:rgb(8, 8, 8);
+  background-color:rgb(22, 173, 27)
+}
+.riddles{
+  font-family: fantasy;
+  border:#d7e1f6;
+  border-style: outset ;
+  height:20px;
+  font-weight:bold;
+  color:rgb(39, 168, 39);
+}
+.answer{
+  font-family:cursive;
+  font-size:20px;
+  color:red;
+}
+

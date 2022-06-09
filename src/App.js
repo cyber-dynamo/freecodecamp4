@@ -1,23 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+import Data from './data';
+import Riddles from './riddles';
 
 function App() {
+
+  const Riddlers = Riddles.map(riddle=>{
+    return(
+        <Data 
+        key={riddle.id}
+        riddle={riddle}/>
+    )
+})
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+    <section>{Riddlers}</section>
     </div>
   );
 }
